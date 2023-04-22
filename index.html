@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Project</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="flexy">
+        <h2>Javascript DOM-Manipulation</h2>
+        <img
+          src="https://media-exp1.licdn.com/dms/image/C4E0BAQGMkpd7khJwXA/company-logo_200_200/0/1630443963630?e=2159024400&v=beta&t=wBUCY9ipxJ-KNKpztQjUHEmqSrKMse-e0eqeXhBwsM8"
+          alt="image"
+          width="40px"
+          height="40px"
+        />
+      </div>
+    </header>
+    <div class="container">
+      <h2>Challenge 1: Calculate Your Age in Days</h2>
+      <div class="underline"></div>
+      <div class="flexy">
+        <button type="button" onclick="findOut()">Find Out</button>
+        <button type="button" onclick="reset()">Reset</button>
+      </div>
+
+      <div id="flexcont" style="margin-bottom: 10px"></div>
+      <hr />
+
+      <h2 style="text-align: center; margin-top: 10px">Check Dates 🏬</h2>
+
+      <form id="dateForm" style="text-align: center; margin-top: 15px">
+        <label htmlFor="date1">Start Date :</label>
+        <input type="date" id="date1" />
+        <label htmlFor="date2">End Date :</label>
+        <input type="date" id="date2" />
+
+        <button type="submit">Click Me</button>
+      </form>
+
+      <div style="display: block; margin: 0 auto; width: 66%">
+        <p>Status : <span id="datestatus"></span></p>
+        <p>Difference in days : <span id="days"></span></p>
+        <p>Number of hours between selected dates : <span id="hours"></span></p>
+        <p></p>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>Challenge 2: Input Text generator & Counter - JS</h2>
+      <div class="underline"></div>
+      <div class="flexy">
+        <button type="button" onclick="generate()">Generate Input</button>
+        <button type="button" onclick="clearAll()">Clear All</button>
+      </div>
+      <div id="flex-container"></div>
+      <hr />
+      <div style="text-align: center; margin-top: 25px">
+        <h3 class="counterHeader">Counter : <span id="number">0</span></h3>
+        <div class="counterbtngrp">
+          <button class="btn decrease">Decrease</button>
+          <button class="btn reset">Reset</button>
+          <button class="btn increase">Increase</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container2" id="c2">
+      <h2>Challenge 3: Rock 🚀 Paper 📎 Scissors ✂</h2>
+      <div class="underline"></div>
+      <div id="flexcontainer2">
+        <img
+          src="https://media.baamboozle.com/uploads/images/353774/1619466192_22083.jpeg"
+          alt="Rock"
+          onclick="rpsgame(this)"
+          id="rock"
+        />
+        <img
+          src="https://thumbs.dreamstime.com/b/lined-paper-icon-cartoon-style-isolated-vector-illustration-88208977.jpg"
+          alt="paper"
+          onclick="rpsgame(this)"
+          id="paper"
+        />
+        <img
+          src="https://ak.picdn.net/shutterstock/videos/1036580600/thumb/10.jpg"
+          alt="Scissors"
+          onclick="rpsgame(this)"
+          id="scissors"
+        />
+      </div>
+    </div>
+    <div class="container4">
+      <h2>Challenge 4: Change button colours and background color</h2>
+      <div class="underline"></div>
+      <div class="flex">
+        <form>
+          <select id="selectedopt" onchange="changeButtonColor(this)">
+            <option value="select">Select</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+          </select>
+        </form>
+        <button type="button" id="btn1">Button-1</button>
+        <button type="button" id="btn2">Button-2</button>
+        <button type="button" id="btn3">Button-3</button>
+      </div>
+      <div style="text-align: center; margin-top: 25px">
+        <h3>Background Color : <span class="color">#ffffff</span></h3>
+        <button id="changeBgBtn" style="background-color: navyblue">
+          Change Background
+        </button>
+      </div>
+    </div>
+
+    <div class="container5">
+      <h2>Challenge 5: Form Validation</h2>
+      <div class="underline"></div>
+      <form id="form">
+        <h3>Registration Form</h3>
+        <div class="input-control">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" />
+          <div class="flex-items">
+            <input type="checkbox" id="checkbox" />&nbsp;
+            <span>Show password</span>
+          </div>
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label for="confirmpass">Confirm Password</label>
+          <input type="password" id="confirmpass" name="confirmpass" autocomplete="new-password"/>
+          <div class="flex-items">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDJ7BexanqGfCobYZHr9qh9MyUGagw4pm5tXiwzOSO3dlKWyI544Dc1y2fON7Nwkd1x1E&usqp=CAU"
+              alt="Show"
+              width="15px"
+              height="15px"
+              id="toggle"
+            />&nbsp;
+            <span>Toggle password</span>
+          </div>
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option disabled hidden selected>Select</option>
+            <option value="india">INDIA</option>
+            <option value="usa">USA</option>
+          </select>
+
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label for="state">State</label>
+          <select id="state" name="state">
+            <option disabled hidden selected>Select</option>
+          </select>
+          <div class="error"></div>
+        </div>
+        <button type="submit" id="submit">Sign up</button>
+      </form>
+    </div>
+    <img
+      class="scrolltop"
+      src="https://static1.squarespace.com/static/5681f73d9cadb697dd844eff/t/56dbcffbfe5f74d4d57b7bd8/1457246203795/1000w/"
+      alt="top"
+      height="50"
+      width="50"
+    />
+
+    <script src="index.js"></script>
+  </body>
+</html>

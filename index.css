@@ -1,0 +1,262 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.903);
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+header div {
+  width: 74%;
+  margin: 0px auto;
+}
+
+header div h2 {
+  color: lavender;
+}
+
+body {
+  background-color: lavender;
+}
+h2 {
+  color: darkslategray;
+}
+.container,
+.container2,
+.container4,
+.container5 {
+  width: 70%;
+  border: 1px solid navy;
+  border-radius: 8px;
+  margin: 10px auto;
+  padding: 30px;
+  background-color: rgb(255, 255, 255);
+}
+
+.container button {
+  background-color: rebeccapurple;
+  border-radius: 5px;
+  padding: 8px 12px;
+  color: white;
+  border: none;
+  margin: 10px 0;
+  border: 1px solid black;
+}
+
+button:hover {
+  transform: scale(0.95);
+  cursor: pointer;
+}
+
+#flex-container,
+#flexcontainer2,
+.flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+
+.flex {
+  align-items: center;
+  border: 1px solid gray;
+  border-right: none;
+  border-left: none;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+.flex select {
+  padding: 5px 20px;
+}
+
+.flex button {
+  border-radius: 5px;
+  padding: 8px 12px;
+  margin: 10px 0;
+  border: none;
+  color: white;
+}
+
+#flex-container input {
+  width: 230px;
+  height: 30px;
+  margin: 5px 2px;
+  padding: 0px 10px;
+  border: 2px solid black;
+}
+
+#flexcontainer2 img {
+  width: 200px;
+  height: 150px;
+  margin: 15px 0;
+  border: 1px solid black;
+}
+
+#flexcontainer2 img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.897);
+}
+
+.counterHeader {
+  color: navyblue;
+  font-size: 25px;
+  border: 1px solid gray;
+  padding: 5px;
+  border-radius: 10px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.underline {
+  border: 1px solid rgb(197, 129, 2);
+  width: 12%;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.container4 button {
+  border-radius: 5px;
+  padding: 8px 12px;
+  color: black;
+  margin: 10px 0;
+  border: 1px solid darkmagenta;
+}
+
+.flexy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flexy img {
+  border-radius: 50%;
+}
+.red {
+  background-color: red;
+  color: white;
+}
+.green {
+  background-color: green;
+  color: white;
+}
+
+.counterbtngrp .decrease {
+  background-color: maroon;
+  margin: 10px;
+  border: 1px solid red;
+}
+
+.counterbtngrp .reset {
+  background-color: blue;
+  margin: 10px;
+  border: 1px solid darkblue;
+}
+
+.counterbtngrp .increase {
+  background-color: green;
+  margin: 10px;
+  border: 1px solid darkgreen;
+}
+
+#date1,
+#date2 {
+  margin: 10px;
+  padding: 5px;
+}
+
+label {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+p {
+  margin: 5px;
+  font-weight: 600;
+}
+
+.container5 h3 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.container5 button {
+  padding: 8px 20px;
+  background-color: rgb(16, 16, 133);
+  color: white;
+  width: 100%;
+  margin: 10px auto;
+  letter-spacing: 1.1px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+#form {
+  width: 400px;
+  margin: 20px auto 0px auto;
+  border: 2px solid lavender;
+  padding: 20px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+
+.input-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-control input,
+select:focus {
+  outline: 0;
+}
+
+.input-control input,
+select {
+  padding: 8px;
+  font-size: 13px;
+}
+
+.input-control .error {
+  height: 15px;
+  color: #ff3860;
+  font-size: 12px;
+}
+
+.input-control.success input {
+  border-color: #09c372;
+}
+.input-control.error input {
+  border-color: #ff3860;
+}
+
+.input-control label {
+  margin-bottom: 5px;
+}
+
+.flex-items {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.scrolltop {
+  position: fixed;
+  right: 20px;
+  bottom: 10px;
+  border-radius: 50%;
+}
+
+#toggle{
+  cursor:pointer;
+}
